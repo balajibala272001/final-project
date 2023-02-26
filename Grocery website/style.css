@@ -32,8 +32,10 @@ body{
     background: #eee;
 }
 
+
 section{
-    padding: 2rem 9%;
+    
+    padding: 1rem 9%;
 }
 
 .heading{
@@ -275,16 +277,38 @@ header .btn:hover{
 }
 
 /* home section */
+.vertical-menu {
+    width: 250px;
+    height: 400px;
+    overflow-y:scroll;
+  }
+  
+  .vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    margin-left:10%;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: rgba(204, 204, 204, 0.441);
+  }
+  
+  .vertical-menu a.active {
+    background-color: #04AA6D;
+    color: red;
+  }
 
 .home{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../assets/img/table-2879213_1280.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 17rem;
-    padding-bottom: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 0rem;
 }
 
 .home .content{
@@ -309,12 +333,13 @@ header .btn:hover{
     line-height: 1.8;
 }
 
+  
 section .btn{
     margin-top: 1rem;
     display: inline-block;
     padding: .8rem 3rem;
     font-size: 1.7rem;
-    border-radius: .5rem;
+    border-radius:1rem;
     border: 2px solid black;
     color: var(--black);
     cursor: pointer;
@@ -325,6 +350,7 @@ section .btn:hover{
     background: var(--orange);
     color: #fff;
 }
+
 
 
 /* footer section */
@@ -340,7 +366,7 @@ section .btn:hover{
 }
 
 .footer .box-container .box h3{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--black);
     padding: 1rem 0;
 }
@@ -419,48 +445,6 @@ section .btn:hover{
 .footer .credit span{
     color: var(--orange);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* media queries */
